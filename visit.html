@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>Diriyah Heritage Village | Home</title>
+    <title>Diriyah Heritage Village | Visit Us</title>
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/script.js" defer></script>
 </head>
@@ -21,46 +21,77 @@
 </header>
 
 <main>
-    <section class="hero">
-        <h1 class="hero-heading">Diriyah Heritage Village</h1>
-        <p class="subtitle">Gateway to the past, heartbeat of Riyadh.</p>
-        <p class="date-line">Today in Diriyah: <span id="currentDate"></span></p>
-    </section>
+    <h1 class="page-title">Visit Us</h1>
 
-    <section class="intro">
-        <h2>Welcome</h2>
+    <section class="visit-section">
+        <h2>Location in Riyadh</h2>
         <p>
-            Diriyah Heritage Village is one of Riyadh's most important cultural sites.
-            It represents the birthplace of the first Saudi state and reflects unique Najdi
-            mud-brick architecture, narrow pathways, and welcoming gathering spaces.
+            Diriyah is located northwest of central Riyadh, near Wadi Hanifah.
+            It is easily reached by car and is included in many city tour routes.
         </p>
-        <ul class="custom-list">
-            <li>UNESCO World Heritage Site on the edge of Riyadh.</li>
-            <li>Perfect for families, students, and heritage lovers.</li>
-            <li>Mix of restored palaces, museums, and traditional markets.</li>
-        </ul>
+
+        <!-- NEW IMAGE HERE -->
+        <div class="img-wrapper">
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQet2GaAVu9Wyq5CYYIjjEzvNVkmpa5L64VxQ&s"
+                alt="View of Diriyah Heritage Village"
+            />
+        </div>
+
+        <div class="map-wrapper">
+            <iframe
+                src="https://www.google.com/maps?q=Diriyah,Riyadh&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
     </section>
 
-    <section class="two-column">
-        <div>
-            <h2>Why Visit Diriyah?</h2>
-            <p>
-                Visitors explore the early story of Saudi Arabia, walk between traditional buildings,
-                and enjoy evening lights that highlight the beautiful architecture. Cafés and modern
-                facilities make the experience comfortable while still preserving the historic soul
-                of the area.
-            </p>
+    <section class="visit-section">
+        <h2>Short Video Introduction</h2>
+        <div class="video-wrapper">
+            <iframe
+                src="https://www.youtube.com/embed/8LwY0lJtjto"
+                title="Discover Diriyah"
+                allowfullscreen>
+            </iframe>
         </div>
-        <div class="img-wrapper">
-            <img id="heroImage" src="images/diriyah_sample.jpg" alt="View of Diriyah Heritage Village" />
-        </div>
+    </section>
+
+    <section class="visit-section">
+        <h2>Contact &amp; Booking Form</h2>
+        <p>
+            Use this form to ask about school trips, family visits, or guided heritage tours.
+        </p>
+        <form id="contactForm">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" required>
+
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" required>
+
+            <label for="phone">Mobile number</label>
+            <input id="phone" name="phone" type="tel" required>
+
+            <label for="group">Group type</label>
+            <select id="group" name="group">
+                <option>Family visit</option>
+                <option>School group</option>
+                <option>Tourist group</option>
+                <option>Other</option>
+            </select>
+
+            <label for="message">Your message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send request</button>
+        </form>
     </section>
 </main>
 
 <footer>
-    <p>Contact us: <a href="mailto:info@diriyahheritage.sa">info@diriyahheritage.sa</a></p>
-    <p>More about Saudi tourism:
-        <a href="https://www.visitsaudi.com" target="_blank">Visit Saudi</a>
+    <p>For direct enquiries, email
+        <a href="mailto:info@diriyahheritage.sa">info@diriyahheritage.sa</a>
     </p>
 </footer>
 </body>
